@@ -4,7 +4,7 @@ package ru.job4j.calculator;
  * @author Maxim Bardakov (wizardofooz666@gmail.com)
  */
 public class Calculator {
-    double result;
+    private double result;
     /**
      * Method add.
      * @param first first digit.

@@ -13,7 +13,7 @@ public class Fit {
     public double manWeight(double height) {
         Calculator calc = new Calculator();
         calc.subtract(height, 100);
-        calc.multiple(calc.result, 1.15D);
+        calc.multiple(calc.getResult(), 1.15D);
         return calc.getResult();
     }
 
@@ -25,7 +25,7 @@ public class Fit {
     public double womanWeight(double height) {
         Calculator calc = new Calculator();
         calc.subtract(height, 110);
-        calc.multiple(calc.result, 1.15D);
+        calc.multiple(calc.getResult(), 1.15D);
         return calc.getResult();
     }
 }
