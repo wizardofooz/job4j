@@ -31,20 +31,45 @@ public class PaintTest {
         );
 
     }
-
+    /**
+     * Testing method rightTrl.
+     */
     @Test
-    public void whenPyramid3() {
+    public void whenRightTrngl4() {
         Paint paint = new Paint();
-        String rst = paint.pyramid(3);
+        String rst = paint.rightTrl(4);
         System.out.println(rst);
         assertThat(rst,
                 is(
                         new StringJoiner(System.lineSeparator(), "", System.lineSeparator())
-                                .add("  ^  ")
-                                .add(" ^^^ ")
-                                .add("^^^^^")
+                                .add("^   ")
+                                .add("^^  ")
+                                .add("^^^ ")
+                                .add("^^^^")
                                 .toString()
                 )
         );
     }
+    /**
+     * Testing method leftTrl.
+     */
+    @Test
+    public void whenLeftTrngl4() {
+        Paint paint = new Paint();
+        String rst = paint.leftTrl(4);
+        System.out.println(rst);
+        assertThat(rst,
+                is(
+                        new StringJoiner(System.lineSeparator(), "", System.lineSeparator())
+                                .add("   ^")
+                                .add("  ^^")
+                                .add(" ^^^")
+                                .add("^^^^")
+                                .toString()
+                )
+        );
+    }
+
+
+
 }
